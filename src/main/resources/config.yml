@@ -1,0 +1,27 @@
+# 数据库设置
+MySQL:
+  url: '120.41.42.88'
+  port: 3306
+  user: root
+  password: 'minecraft!?283?!#.'
+  database: bkm016
+  table: marry_database
+  
+# 插件设置
+Settings:
+  # 多少秒更新一次结婚数据（单位：秒）
+  update: 5
+  # 情侣列表每页多少行
+  listsize: 5
+  # 请求有效期（单位：秒）
+  effectiveinvite: 5
+  # 结婚需要多少金币
+  ecomomy: 5000
+  # 日期格式
+  dateformat: 'yyyy年MM月dd日 HH:mm:ss'
+  # 戒指在 TabooLib 里的名称
+  ringname: '戒指'
+  # 恩爱值道具在 TabooLib 里的名称
+  marryitemname: '玫瑰'
+  # 恩爱值道具每次使用增加多少恩爱值
+  marryitempoint: 10

@@ -1,0 +1,16 @@
+
+name: Marry
+
+description: a plugin for Bukkit
+
+authors: [坏黑]
+website: http://www.15imc.com/index.html
+
+main: me.skymc.marry.Marry
+
+version: {$VERSION}
+
+commands: 
+  marry:
+    aliases: []
+    permission: marry.command

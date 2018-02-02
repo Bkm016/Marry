@@ -1,0 +1,63 @@
+command:
+  error: '&4指令错误'
+  help:
+  - ''
+  - '&6========== &eMarryPlugin &6=========='
+  - '&e/marry send [ID] &f—— &7申请交♂往'
+  - '&e/marry yes  [ID] &f—— &7同意交♂往'
+  - '&e/marry no   [ID] &f—— &7拒绝交♂往'
+  - '&e/marry divorce   &f—— &7分♂手'
+  - '&e/marry list      &f—— &7列出所有情♂侣'
+  - ''
+  list:
+    error: '&4错误的页数'
+    head: '&6========== &eMarryPlugin &6=========='
+    data: '&e $id. &f$sender, $target &e恩爱值: &f$point'
+    bottom: '&6当前 &f$page &6页, 总共 &f$all &6页'
+  info:
+    empty: '&4查询成功, 单身狗一枚!'
+    message:
+    - ''
+    - '&6========== &eMarryPlugin &6=========='
+    - '&e 交♂往发起者: &f$sender'
+    - '&e 交♂往接受者: &f$target'
+    - ''
+    - '&e 恩爱值: &f$point &e纪念日: &f$date'
+    - ''
+  send:
+    empty: '&4请输入正确的玩家名称'
+    offline: '&4玩家 &c$ &4不在线'
+    myself: '&4你怕是想要个对象想疯了吧, 自己都不放过!'
+    already-marry: '&4你或者对方已经结婚!'
+    already-send: '&4请等待上一个请求结束!'
+    noring: '&4对不起, 少个戒指, 诚意不足'
+    return: '&4戒指已退还'
+    sender: '&e你向 &6$ &e发出交♂往请求, 有效期 &630 &e秒!'
+    target:
+    - ''
+    - '&e玩家 &6$ &e向你发出交♂往请求'
+    - ''
+    - '&e输入 &6/marry yes $ &e同意'
+    - '&e输入 &6/marry no $  &e拒绝'
+    - ''
+    timeout: '&7请求已过期'
+  accept:
+    empty: '&4请输入正确的玩家名称'
+    offline: '&4玩家 &c$ &4不在线'
+    notfound: '&4对方并没有向你发起交♂往请求'
+    aleady-marry: '&4你或者对方已经结婚!'
+    sender: '&e玩家 &6$ &e同意与你交♂往'
+    target: '&e已同意玩家 &6$ &e的交♂往请求'
+    broadcast: '&6&l恭喜! &f$1, $2 &e两人成为全服单身狗公敌!'
+  deny:
+    empty: '&4请输入正确的玩家名称'
+    notfound: '&4对方并没有向你发起交♂往请求'
+    sender: '&4玩家 &c$ &4拒绝与你交♂往'
+    target: '&4已拒绝玩家 &c$ &4的交♂往请求'
+  divorce:
+    empty: '&4你并没有对象哦, SB单身狗'
+    sender: '&4已和玩家 &c$ &4断! 绝! 关! 系!'
+  item:
+    empty: '&4没有对象你恩爱你自己吧'
+    sender: '&a+10 恩爱值'
+    target: '&a+10 恩爱值'
