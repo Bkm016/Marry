@@ -52,7 +52,7 @@ public class ListCommand extends SubCommand {
 		/**
 		 * 循环所有结婚数据
 		 */
-		for (int i = start; i < Marry.getMarryDataManager().getMarrydata().size() && start < end; i++) {
+		for (int i = start; i < Marry.getMarryDataManager().getMarrydata().size() && i < end; i++) {
 			MarryData data = Marry.getMarryDataManager().getMarrydata().get(i);
 			sender.sendMessage(Marry.getLanguage().get("command.list.data")
 					.replace("$id", String.valueOf(i + 1))

@@ -6,6 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
@@ -16,6 +17,11 @@ import me.skymc.taboolib.inventory.InventoryUtil;
 import me.skymc.taboolib.inventory.ItemUtils;
 
 public class ListenerPlayer implements Listener {
+	
+	@EventHandler (priority = EventPriority.HIGHEST)
+	public void chat(AsyncPlayerChatEvent e) {
+		e.setFormat(Marry.getConf().getString("Settings.prefix." + (MarryAPI.getMarryData(e.getPlayer().getName()) == null ? "0" : "1")).replace("&", "¡ì") + e.getFormat());
+	}
 	
 	@EventHandler (priority = EventPriority.HIGHEST)
 	public void in(PlayerInteractEvent e) {
